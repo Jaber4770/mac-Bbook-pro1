@@ -16,13 +16,13 @@ function allTotal() {
     let totalPricehare = document.getElementById('totalPricehare');
     totalPricehare.innerText = addSum;
 }
-
+// product function
 function productTotal(productNum, price) {
     let productNumber = document.getElementById(productNum);
     let productNumberText = parseInt(productNumber.innerText = price);
     allTotal();
 }
-
+// discount function
 function steveKaku() {
     let inputHare = document.getElementById('inputHare');
     let inputHareValue = inputHare.value;
@@ -34,11 +34,11 @@ function steveKaku() {
     }
 }
 
+// all functional caller 
 
 document.getElementById('eightGB').addEventListener('click', function() {
     productTotal('extra-memory', 0);
 });
-
 
 document.getElementById('sixteenGB').addEventListener('click', function() {
     productTotal('extra-memory', 180);
