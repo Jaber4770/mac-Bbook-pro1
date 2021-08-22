@@ -1,0 +1,23 @@
+
+.half-width{
+    width: 50%;
+}
+.price{
+    display: inline-block;
+}
+.half-width img{
+    width: 50%;
+    float: right;
+    margin-right: 10%;
+}
+.button-clr{
+    border: 1px solid rgb(189, 183, 183);
+    background-color: white;
+}
+.aply-btn{
+    background-color: #DC3545;
+    color: white;
+}
+.border-top{
+    border-top: 1px solid rgb(189, 183, 183);
+}
