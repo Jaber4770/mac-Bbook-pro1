@@ -1,37 +1,65 @@
-function allButton(){
+function allTotal() {
     let bestPrice = document.getElementById('best-price');
-    let bestPriceValue = parseInt(bestPrice.innerText);
-    let extraMemory = document.getElementById('extra-memory');
-    let extraMemoryValue = parseInt(extraMemory.innerText);
+    let bestPriceText = parseInt(bestPrice.innerText);
+    let extraPemory = document.getElementById('extra-memory');
+    let extraPemoryText = parseInt(extraPemory.innerText);
     let extraStorage = document.getElementById('extra-storage');
-    let extraStorageValue = parseInt(extraStorage.innerText);
+    let extraStorageText = parseInt(extraStorage.innerText);
     let deliveryCharge = document.getElementById('delivery-charge');
-    let deliveryChargeValue = parseInt(deliveryCharge.innerText);
-};
-function allPrice(allProduct, allPrice){
-    let allProductNumber = document.getElementById(allProduct);
-    let allProductNumbertext = parseInt(allProductNumber.innerText = allPrice);
-    allButton();
-};
-document.getElementById('eightGB').addEventListener('click', function(){
-    allButton('extra-memory', 0);
-});
-document.getElementById('sixteenGB').addEventListener('click', function(){
-    allButton('extra-memory', 180);
-});
-document.getElementById('ssd256').addEventListener('click', function(){
+    let deliveryChargeText = parseInt(deliveryCharge.innerText);
 
-});
-document.getElementById('ssd512').addEventListener('click', function(){
+    let addSum = bestPriceText + extraPemoryText + extraStorageText + deliveryChargeText;
 
-});
-document.getElementById('ssd1').addEventListener('click', function(){
+    let totalPrice = document.getElementById('total-price');
+    totalPrice.innerText = addSum; 
 
-});
-document.getElementById('delivery-id1').addEventListener('click', function(){
+    let totalPricehare = document.getElementById('totalPricehare');
+    totalPricehare.innerText = addSum;
+}
 
-});
-document.getElementById('delivery-id2').addEventListener('click', function(){
+function productTotal(productNum, price) {
+    let productNumber = document.getElementById(productNum);
+    let productNumberText = parseInt(productNumber.innerText = price);
+    allTotal();
+}
 
+function steveKaku() {
+    let inputHare = document.getElementById('inputHare');
+    let inputHareValue = inputHare.value;
+    if(inputHareValue == 'stevekaku'){
+        let totalPricehare = document.getElementById('totalPricehare');
+        let totalPricehareText = parseInt(totalPricehare.innerText);
+        let discount = totalPricehareText / 100 * 20;
+        totalPricehare.innerText = totalPricehareText - discount;
+    }
+}
+
+
+document.getElementById('eightGB').addEventListener('click', function() {
+    productTotal('extra-memory', 0);
 });
 
+
+document.getElementById('sixteenGB').addEventListener('click', function() {
+    productTotal('extra-memory', 180);
+});
+
+document.getElementById('ssd256').addEventListener('click', function() {
+    productTotal('extra-storage', 0);
+});
+
+document.getElementById('ssd512').addEventListener('click', function() {
+    productTotal('extra-storage', 100);
+});
+
+document.getElementById('ssd1').addEventListener('click', function() {
+    productTotal('extra-storage', 180);
+});
+
+document.getElementById('delivery-id1').addEventListener('click', function() {
+    productTotal('delivery-charge', 0);
+});
+
+document.getElementById('delivery-id2').addEventListener('click', function() {
+    productTotal('delivery-charge', 20);
+});
