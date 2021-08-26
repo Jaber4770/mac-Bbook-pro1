@@ -36,6 +36,7 @@ function promoCode(){
         let discount = getLastTotalPriceAmount * 20 / 100 ;
         getLastTotalPrice.innerText = getLastTotalPriceAmount - discount;
     }
+    getInput.value = '';
 };
 
 // all button and function caller
