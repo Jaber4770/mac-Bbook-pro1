@@ -28,59 +28,59 @@
                 <!-- extra hardware -->
                 <div class="mt-5">
                     <h4>Memory</h4>
-                    <button id="eightGB" class="rounded button-clr">8GB unified memory</button>
-                    <button id="sixteenGB" class="rounded button-clr">16GB unified memory</button>
+                    <button id="eightGB" class="rounded button-clr button-hover">8GB unified memory</button>
+                    <button id="sixteenGB" class="rounded button-clr button-hover">16GB unified memory</button>
                 </div>
                 <div class="mt-5">
                     <h4>Storage</h4>
-                    <button id="ssd256" class="rounded button-clr">256GB SSD Storage</button>
-                    <button id="ssd512" class="rounded button-clr">512GB SSD Storage</button>
-                    <button id="ssd1" class="rounded button-clr">1TB SSD Storage</button>
+                    <button id="ssd256GB" class="rounded button-clr button-hover">256GB SSD Storage</button>
+                    <button id="ssd512GB" class="rounded button-clr button-hover">512GB SSD Storage</button>
+                    <button id="ssd1TB" class="rounded button-clr button-hover">1TB SSD Storage</button>
                 </div>
                 <div class="mt-5">
                     <h4>Chose your delivery option</h4>
-                    <button id="delivery-id1" class="rounded button-clr">Friday, Aug 25 FREE Prime Delivery</button>
-                    <button id="delivery-id2" class="rounded button-clr">Friday, Aug 21 Delivery Charge $20</button>
+                    <button id="delivery-id-free" class="rounded button-clr button-hover">Friday, Aug 25 FREE Prime Delivery</button>
+                    <button id="delivery-id-premium" class="rounded button-clr button-hover">Friday, Aug 21 Delivery Charge $20</button>
                 </div>
                 <!-- all price -->
                 <div class="mt-5 half-width">
                     <div class="d-flex border-bottom pb-2">
-                        <div class="w-75">
+                        <div class="w-75 mt-2">
                             <h5>Best Price</h5>
                         </div>
-                        <div>
+                        <div class="mt-2">
                             <h5 class="d-inline">$<span id="best-price">1299</span></h5>
                         </div>
                     </div>
                     <div class="d-flex border-bottom pb-2">
-                        <div class="w-75">
+                        <div class="w-75 mt-2">
                             <h5>Extra Memory Cost</h5>
                         </div>
-                        <div>
+                        <div class="mt-2">
                             <h5 class="d-inline">$<span id="extra-memory">0</span></h5>
                         </div>
                     </div>
                     <div class="d-flex border-bottom pb-2">
-                        <div class="w-75">
+                        <div class="w-75 mt-2">
                             <h5>Extra Storage Cost</h5>
                         </div>
-                        <div>
+                        <div class="mt-2">
                             <h5 class="d-inline">$<span id="extra-storage">0</span></h5>
                         </div>
                     </div>
                     <div class="d-flex border-bottom border-dark border-2 pb-2">
-                        <div class="w-75">
+                        <div class="w-75 mt-2">
                             <h5>Delivery Charge</h5>
                         </div>
-                        <div>
+                        <div class="mt-2">
                             <h5 class="d-inline">$<span id="delivery-charge">0</span></h5>
                         </div>
                     </div>
                     <div class="d-flex border-bottom pb-2">
-                        <div class="w-75">
+                        <div class="w-75 mt-2">
                             <h4>Total Price</h4>
                         </div>
-                        <div>
+                        <div class="mt-2">
                             <h5 class="d-inline">$<span id="total-price">1299</span></h5>
                         </div>
                     </div>  
@@ -89,19 +89,19 @@
                 <div class="mt-3">
                     <h6>Add Promo Code</h6>
                     <input id="inputHare" class="button-clr rounded" type="text" name="" id="">
-                    <button onclick="steveKaku()" id="addPromo" class="button-clr rounded aply-btn p-1 px-2">Apply</button>
+                    <button onclick="promoCode()" id="addPromo" class="button-clr rounded aply-btn p-1 px-2">Apply</button>
                 </div>
             </div>
         </section>
         <!-- total after promo code -->
         <section>
             <div class="border-top mt-3">
-                <h2 class="text-center mt-2">Total:$<span id="totalPricehare">1299</span></h2>
+                <h2 class="text-center mt-2">Total:$<span id="last-total-price">1299</span></h2>
             </div>
         </section>
     </main>
     <footer>
     </footer>
-    <script src="calculation.js"></script>
+    <script src="js/calculation.js"></script>
 </body>
 </html>
