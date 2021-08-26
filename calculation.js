@@ -22,7 +22,7 @@ function productTotal(productNum, price) {
     let productNumberText = parseInt(productNumber.innerText = price);
     allTotal();
 }
-// discount function
+// discount promo function
 function steveKaku() {
     let inputHare = document.getElementById('inputHare');
     let inputHareValue = inputHare.value;
